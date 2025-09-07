@@ -17,11 +17,12 @@
 
 /*
  * Other Pin Connections
- * Red LED - 7
- * Green LED - 6
+ * Red LED - 6
+ * Green LED - 7
  * Blue LED - 5
- * Servo Signal PIN - 4
+ * Solenoid pin  - 8
  * Push Button -3
+ * Door unlock Button - 2
  */
 #include <EEPROM.h>     // We are going to read and write PICC's UIDs from/to EEPROM
 #include <SPI.h>        // RC522 Module uses SPI protocol
@@ -495,3 +496,4 @@ boolean isMaster( byte test[] ) {
   else
     return false;
 }
+
